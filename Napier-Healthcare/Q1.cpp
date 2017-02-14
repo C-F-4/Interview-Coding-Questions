@@ -1,9 +1,9 @@
 /*
- * String Encoding
- * Input: aaaabbcccsss
- * Output: a4b2c3s3
+ * String Encoding - Encode a given string such that all the repeated characters
+ * Input: aaaabbcccssse
+ * Output: a4b2c3s3e
  */
- 
+
 #include <iostream>
 #include <sstream>
 
@@ -16,13 +16,14 @@ std::string StrEncode(std::string str_to_encode) {
       i++;
       ct++;
     }
-    ss << ct;
+    if(ct != 0)
+      ss << ct+1;
   }
   return ss.str();
 }
 
 int main(void) {
   std::string str;
-  cin >> str;
-  cout << str_encode(str) << endl;
+  std::getline(std::cin, str);
+  std::cout << StrEncode(str) << std::endl;
 }
