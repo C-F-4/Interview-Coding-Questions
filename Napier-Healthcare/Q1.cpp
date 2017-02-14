@@ -1,5 +1,6 @@
 /*
- * String Encoding - Encode a given string such that all the repeated characters
+ * String Encoding - Encode a given string such that all the repeated characters are removed and replaced by a integer 
+ *   which is the count of the repeated characters as shown in the below test case
  * Input: aaaabbcccssse
  * Output: a4b2c3s3e
  */
