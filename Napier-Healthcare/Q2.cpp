@@ -4,7 +4,11 @@
  
 #include <iostream>
 
+class LinkedList {
+};
+
 int main(void) {
+  LinkedList llist;
   return 0;
 }
  
